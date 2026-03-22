@@ -248,9 +248,10 @@ GameObject:
   - component: {fileID: 7780329351967295308}
   - component: {fileID: 3387208848180319029}
   - component: {fileID: 17753064705796002}
-  - component: {fileID: -7716708857450512649}
   - component: {fileID: 5692449742707693771}
+  - component: {fileID: -7716708857450512649}
   - component: {fileID: 7825055889503931818}
+  - component: {fileID: 4150471601461725605}
   m_Layer: 7
   m_Name: Enemy_01
   m_TagString: Untagged
@@ -353,22 +354,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-7716708857450512649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6558929712147459747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147e0bfcc84a8b34aa20e4db8628de91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 7366325778545218829, guid: fbc1d8ae690cdee46a5d406740dd335f,
-    type: 3}
-  defaultHealthPoint: 100
-  healthPoint: 0
 --- !u!60 &5692449742707693771
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -435,6 +420,22 @@ PolygonCollider2D:
       - {x: -0.104, y: -0.080000006}
       - {x: -0.048, y: -0.296}
   m_UseDelaunayMesh: 0
+--- !u!114 &-7716708857450512649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558929712147459747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147e0bfcc84a8b34aa20e4db8628de91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 7366325778545218829, guid: fbc1d8ae690cdee46a5d406740dd335f,
+    type: 3}
+  defaultHealthPoint: 100
+  healthPoint: 25
 --- !u!114 &7825055889503931818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,6 +450,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: -7716708857450512649}
   damage: 25
+--- !u!114 &4150471601461725605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558929712147459747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec769725cb591f34db81f0a71d75ec07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyPath: {fileID: 0}
+  flySpeed: 3
 --- !u!1 &9115150728074050313
 GameObject:
   m_ObjectHideFlags: 0
